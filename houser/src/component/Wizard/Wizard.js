@@ -26,7 +26,7 @@ export default class Wizard extends Component {
     
         }).then(res =>{
           
-          
+          this.props.history.push('/')
         })
       }
 

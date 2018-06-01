@@ -2,7 +2,7 @@ import React from 'react';
 
 const House = (props) => {
 
-const{house}=props;
+const{house, deleteHouseFn}=props;
     return (
         <div>
             House
@@ -12,7 +12,7 @@ const{house}=props;
             <span>{house.state}</span>
             <span>{house.zip}</span>
 
-            <delete>Delete</delete>
+            <button onClick={()=>{deleteHouseFn(house.propertyid)}}>Delete</button>
         </div>
     )
 
