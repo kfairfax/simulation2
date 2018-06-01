@@ -36,6 +36,7 @@ export default class Dashboard extends Component {
     return (
 
       <div>
+      
         Dashboard
 
           <Link to='/wizard'>

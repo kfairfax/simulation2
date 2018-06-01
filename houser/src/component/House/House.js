@@ -5,7 +5,6 @@ const House = (props) => {
 const{house, deleteHouseFn}=props;
     return (
         <div>
-            House
             <span>{house.propertyname}</span>
             <span>{house.address}</span>
             <span>{house.city}</span>
