@@ -14,4 +14,5 @@ app.listen(port, ()=>{
 
 massive(process.env.CONNECTION_STRING).then(dbInstance => app.set('db', dbInstance));
 
-app.get('/api/houses', controller.read)
+app.get('/api/houses', controller.read);
+app.post('/api/house', controller.create);

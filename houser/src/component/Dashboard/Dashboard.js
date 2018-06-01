@@ -16,6 +16,7 @@ export default class Dashboard extends Component {
   componentDidMount(){
     this.getHouses();
   }
+  
   getHouses() {
     axios.get('/api/houses').then(res => {
       this.setState({ houseList: res.data })
