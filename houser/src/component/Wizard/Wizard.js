@@ -13,7 +13,29 @@ export default class Wizard extends Component {
             zipcode: ''
         }
     }
+
+    handleNameChange(val){
+        this.setState({name:val})
+    }
+
+    handleAddressChange(val){
+        this.setState({address:val})
+    }
+
+    handleCityChange(val){
+        this.setState({city:val})
+    }
+
+    handleStateChange(val){
+        this.setState({state:val})
+    }
+
+    handleZipcodeChange(val){
+        this.setState({zipcode:val})
+    }
+
     render() {
+        const{name, address, city, state, zipcode}=this.state;
         return (
 
             <div>
