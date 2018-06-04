@@ -36,13 +36,8 @@ export default class Dashboard extends Component {
     return (
 
       <div>
-      
         Dashboard
 
-          <Link to='/wizard'>
-          <button>Add New Property</button>
-
-        </Link>
         {
           houseList.map((house, i) => (
             <House key={i}
