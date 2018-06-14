@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import{Route} from 'react-router-dom';
-import NewListing from './NewListing/NewListing';
-import ImageUrl from './ImageUrl/ImageUrl';
-import Rent from './Rent/Rent';
+import NewListing from '../NewListing/NewListing';
+import ImageUrl from '../ImageUrl/ImageUrl';
+import Rent from '../Rent/Rent';
+
 
 export default class Wizard extends Component {
     render() {
